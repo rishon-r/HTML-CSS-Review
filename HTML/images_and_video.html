@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Using images </title>
+        <!--You can add a favicon for your webpage as follows-->
+        <link rel="icon" type="img/jpg" href="/Users/rishon/Projects/HTML_CSS_Review/Images/pexels-lucadross-6793148.jpg">
+    </head>
+    <body>
+        <h3> We can add images to our html pages</h3>
+
+        <pre>
+            Images are added to the website with the help of the img tag. 
+            We use 4 important attributes alongside it.
+            Tese attributes are src, height, width and alt.
+            src provides the location of image on computer
+            height and width are self explanatory and are provide in units of pixels
+            alt provides an alternate text to display during times where we cannot display said image
+            another good thing about it is when someone is using a screen reader due to visual impairment,
+            the screen reader will read out the message provided in the alt attribute
+            Note that img is also a self closing tag.
+        </pre>
+        
+        <img src="/Users/rishon/Projects/HTML_CSS_Review/Images/pexels-lucadross-6793148.jpg" height="200" width="200" alt="Beautiful nature image">
+        <br>
+
+        <pre>
+            Images can also be sandwiched between an anchor tag in a manner such that they act as a link to something
+            In the example given below, clicking on the image of horses redirects you to the wikipedia image of horses
+        </pre>
+        <a href="https://en.wikipedia.org/wiki/Horse" target="_blank" title="Horseys">
+            <img src="/Users/rishon/Projects/HTML_CSS_Review/Images/pexels-consumedbyjpgs-1662055280-30305200.jpg" height="200" width="200" alt="Cool horse image">
+        </a>
+
+        <pre>
+            HTML5 also allows you to add videos to your web pages.
+            This can be done using the video tag.
+            Height and width tags can be used in a manner similar to how they were used withthe images.
+            You use the source tag within the video tag in order to add the link to the video
+            You can also use the controls and muted property in the video tag in order to give the user some additional control features
+            You can also use the autoplay attribute i oreder to autoplay the video
+            You can add a backup link to the video by simply adding another source tag within the video tag
+            You also use the type attribute of the source tag in order to state what type of video is being referred to 
+            You can also sandwich a video within an anchor tag to make it function as a link similar to how we did it with images.
+            Due to my laziness however we will refrain from doing this here as the creation method is very similar
+        </pre>
+        <video width="200px" height="200px" controls autoplay muted>
+            <source src="/Users/rishon/Projects/HTML_CSS_Review/Videos/13700775_2160_3840_25fps.mp4" type="video/mp4">
+        </video>
+
+
+    </body>
+</html>

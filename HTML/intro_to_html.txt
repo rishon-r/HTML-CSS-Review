@@ -1,0 +1,24 @@
+HTML (HyperText Markup Language) is the foundation of web development. It structures content on the web.
+- HyperText = Links between pages
+- Markup Language = Tags that describe document structure (Tags usually come in pairs)
+
+KEY ELEMENTS
+- <!DOCTYPE html>: Declares HTML5. Single tag, does not come in a pair. 
+- <html>: Root of HTML document. Between the two html tags is where we will add the rest of our tags
+- <head>: Metadata (not displayed). This contains information about our web page such as a the <title> tag. These tags also come in pairs
+- <body>: The body element also comes in pairs. It contains all the visible content of your webpage
+
+COMMON TAGS:
+
+Headings- 	<h1> to <h6>	- Semantic structure (h1 is highest)
+Paragraphs-	<p>	- Text block. Used to write paragraphs. Ends with a line break by default.
+Bold/Strong-	<strong> / <b>	- <strong> is semantic (importance)
+Italic/Emphasis	- <em> / <i> -	<em> has meaning (emphasis)
+Line break	- <br> -	Avoid excessive use
+Horizontal rule -	<hr> -	Thematic break Note that hr and br are single tags. They are also known as self closing tags.
+Blockquote -	<blockquote> -	For quoted text
+Code -	<code> -	Inline code
+Preformatted -	<pre> -	Preserves spacing, line breaks. You can change <p> tags to this when you need pre formatting
+
+
+
