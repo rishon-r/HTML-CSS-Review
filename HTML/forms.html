@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h2>Forms</h2>
+    <pre>
+        Forms are a core component of most websites
+        In HTML, we can implement forms with the form tag
+        The form tag takes some important attributes
+        The first important attribute is action
+        The action attribute specifies where the data should be sent when the form is submitted
+        Another important attribute is the method attribute
+        It can take one of two values, either GET or POST
+        This is used to represent te method used to send data
+        We typically use GET for insensitive data and POST for sensitive data
+        The GET method appends data to the URL while the POST method sends data via the request body
+        Within the form tag, there may be multiple self closing input tags
+        These tags are used to represent input fields in a form
+        These tags also take certain important attributes such as type
+        The type attribute can take one of many values from the likes of text, password, submit, number, email, submit, radio etc.
+        The input tag also takes an attribute called id which is very important in this case.
+        Id is self explanatory, it is simply a identification given to the input field
+        In practice, input tags are usually used alongside label tags
+        Label tags take an attribute called for and this is where we mention the id attribute value of the input tag that the label is being used for.
+        <br>
+        Every form must also typically end with a submit button i.e an input field of type submit
+        This is so that the user can submit the form
+        You can also make an input field mandatory by supplying the required attribute
+        This will make that input field a reequired field (i.e you will not be able to submit the form without filling it out)
+        The input tag also takes a minLength attribute or maxLength attribute which are self explanatory
+        Another cool attribute the input tag takes is a placeholder attribute. Here, you can essentially supply 
+        
+
+    </pre>
+    <br>
+    <h4 align="center"> Sign Up form</h4>
+    <form action="forms.html" method="POST" align="center">
+
+        <label for="name"> Your name</label>
+        <input type="text" placeholder="name" id="name" required>
+        <br>
+        <br>
+
+        <label for="Bday"> Your Birthdate</label>
+        <input type="date" id="Bday">
+        <br>
+
+
+        <!--Below is an example of using radio buttons in forms. To use them, ensure all radio buttons that are a part of the same component have the same name field-->
+        <!--The value of each radio button should be the value you aim to send upon clicking said button-->
+        <p> Select your gender: </p>
+        <label for="Male"> Male </label>
+        <input type="radio" value="Male" id="Male" name="Gender">
+        <label for="Female"> Female </label>
+        <input type="radio" value="Female" id="Female" name="Gender">
+        <label for="Other"> Other </label>
+        <input type="radio" value="Other" id="Other" name="Gender">
+        <br>
+        <br>
+        
+        <label for="Province">Select Province </label>
+        <select id="Province">
+            <option value="British Columbia">British Columbia</option>
+            <option value="Ontario">Ontario</option>
+            <option value="Quebec">Quebec</option>
+            <option value="Nova Scotia">Nova Scotia</option>
+        </select>
+        <br>
+        <br>
+
+        <label for="Email"> Your Email</label>
+        <input type="email" placeholder="Email" id="Email">
+        <br>
+        <br>
+
+        <label for="Password"> Your Password</label>
+        <input type="password" placeholder="Password" id="Password">
+        <br>
+        <br>
+
+        <label for="Password Re-enter"> Confirm Password</label>
+        <input type="password" placeholder="Password" id="Password Re-enter">
+        <br>
+        <br>
+
+        <label for="Subscribe">Subscribe to newsletter</label>
+        <input type="checkbox" id="Subscribe">
+        <br>
+        <br>
+
+
+
+        <input type="submit">
+        <input type="reset">
+        <br>
+        <br>
+        <br>
+        
+
+    </form>
+    <br>
+</body>
+</html>
