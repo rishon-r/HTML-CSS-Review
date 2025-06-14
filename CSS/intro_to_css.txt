@@ -89,5 +89,16 @@
     - This embedded code will be in the form of a few link tags
     - Copy this code and paste it within the head element of the html file you are styling with CSS
     - This gives you the ability to use said font in the css sheet as a value with the font-family property
+- Borders in CSS
+    - Style of border can be set with the border-style property. Some values this property takes are solid, ridge, dotted, double, none, groove, etc.
+    - The thickness of the border can be set with the border-width property. This takes a px or em value. E.g 4px
+    - Color of the body can be set with the border-color property. Colors work in a manner similar to that previously discussed and can be provided in one of 4 ways
+    - The border-radius property helps us round the border. It takes an argument usually in pixels. The higher the pixels are, the more rounded the border is.
+    - Instead of mentioning border-style, border-width and border-color properties individually, you can mention them all at once in a sweet shorthand way.
+    - You use the border property and mention the width, style and color in that order, separated by spaces.
+    - You can do the same as above but only have it apply to a certain part of the border. 
+    - You can do this by using the border-right, border-left, border-bottom or border-top property instead of the border property
+    - border-radius still however remains it's own individual property.
 
--
+- Shadows in CSS
+
