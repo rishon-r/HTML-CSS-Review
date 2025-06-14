@@ -1,0 +1,93 @@
+- CSS (Cascading Style Sheets) is a stylesheet language used to describe the presentation of a document written in HTML or XML.
+- While HTML is responsible for the structure and content, CSS handles the look and feel—like colors, layouts, fonts, and animations.
+- Think of HTML as the bones of a website, and CSS as the skin, clothing, and makeup.
+- CSS provides us with two key features among many:
+    1. Separation of concerns: Having a separate CSS styling sheet ensures that our design elements are separated from our structural elements
+    2. Reusability: A single CSS file can be used to style multiple HTML pages
+- CSS styling can be provided one of three ways
+    1. Inline
+        - Inline styling refers to when we add a style attribute to the opening tag of a HTML element
+    2. Internal
+        - Internal styling refers to when you have a CSS style sheet that exists within your html file
+        - This is done with the help of a style tag within the head tag of a html file
+        - Within the style tag, appropriate selectors and properties can be applied
+    3. External
+        - This is the most common and conventional way of using CSS stylesheets
+        - To do this you must first create a file with a .css extension. This will be your CSS file.
+        - Then, you will use the self closing link tag within the head element of the html page you wish to style with the stylesheet
+        - In this link tag, you will set the rel attribute to value stylesheet and the href to be the relative path of the CSS file
+        - An external style sheet can be applied to more than one html file
+- How CSS works: CSS works with the help of 3 key ideas
+    1. selectors: Targets HTML elements (e.g., h1, .class, #id)
+    2. properties: The visual feature (e.g., color, font-size)
+    3. values: The desired appearance (e.g., blue, 24px)
+- This is how a CSS stylesheet looks syntactically:
+    selector {
+    property: value;
+    }   
+- You can have multiple selectors and multiple properties set to different values within a selector
+- More on selectors:
+    Basic Selectors
+        element: Targets all <p> elements
+        → p { ... }
+
+        .class: Targets elements with a class
+        → .highlight { ... }
+
+        #id: Targets a unique ID
+        → #main-title { ... }
+- More on properties
+    Some common properties:
+    1. Text
+        color: text color
+        font-family: typography
+        font-size: size of text
+        text-align: alignment (left, right, center, justify)
+        line-height: vertical spacing between lines`
+
+    2. Background
+        background-color
+        background-image
+        background-size
+        background-repeat
+
+
+- Colors in CSS:
+    - We can change the background color of an element or the cont color
+    - background-color is used to represent the background color of an element and color to represent the font color
+    - We can us names, rgb values, hexadecimal values or hsl values to represent color
+    - Names are straightforward to use
+    - There are multiple sites wherein we can find the names of these colors
+    - MDN docs has a particularly good page
+    - The VS code editor will also provide you with suggestion sometimes
+    - When you select a color in VS code there will be a colored box near its text representation. You can click on this to access a color picker
+    - To use rgb, you will use the rgb keyword followed by parentheses within which you will provide 3 comma separated numerical values
+    - These values range from 0 to 255
+    - Hexadecimal values are also self explanatory. They are a representation of a color in hexadecimal format
+    - Hex values in CSS start with a hashtag
+    - The last possible representation is the HSL representation
+    - HSL stands for Hue Saturation Lightness
+    - TO provide HSL representation of color you will provide the hsl keyword followed by parentheses within which you have three numerical values.
+    - The first value is a number, the second two are persentages
+    - These 3 values represent what the acronym stands for (self-explanatory)
+   
+- Fonts:
+    - You can change a font by using font-family property
+    - It is best in web design to use a sans-serif font
+    - Certain fonts don't get displayed on all web browsers
+    - So it makes sense to have backup fonts
+    - You can just pass the backup font after a comma succeeding the original font
+    - You can change the font size using the font-size property
+    - This is set to 16 by default
+    - The unit used is pixels represented by px, this will follow the number
+    - em is also a commonly used unit. An em represents a kind of relativ percent. E.g 1em stands for 100%
+    - font-weight is another important property that is usually set to normal. However it can even be set to bold, bolder or lighter.
+    - font-style is another cool property. It can be set to italic for example
+- Using Google Fonts
+    - You can access additional fonts at fonts.goole.com
+    - When you select a font there and click on get font, it will give you the option to copy the embedded code
+    - This embedded code will be in the form of a few link tags
+    - Copy this code and paste it within the head element of the html file you are styling with CSS
+    - This gives you the ability to use said font in the css sheet as a value with the font-family property
+
+-
