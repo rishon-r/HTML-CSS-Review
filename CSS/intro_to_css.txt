@@ -89,6 +89,7 @@
     - This embedded code will be in the form of a few link tags
     - Copy this code and paste it within the head element of the html file you are styling with CSS
     - This gives you the ability to use said font in the css sheet as a value with the font-family property
+
 - Borders in CSS
     - Style of border can be set with the border-style property. Some values this property takes are solid, ridge, dotted, double, none, groove, etc.
     - The thickness of the border can be set with the border-width property. This takes a px or em value. E.g 4px
@@ -101,4 +102,57 @@
     - border-radius still however remains it's own individual property.
 
 - Shadows in CSS
+    - A fundamental form of a shadow in CSS refers to the text-shadow property 
+    - The text-shadow property requires 2 values: A vertical offset and a horizontal offset. 
+    - These are both provided in pixels. E.g text-shadow: 1px 2px
+    - You can also add a 3rd number for a blur in a similar pixel format
+    - You can also provide a color as a fourth value in the standard format to change the color of the shadows
+    - You can add a second shadow of the same form by typing the same format after a comma.
+    - E.g text-shadow 1px 3px 3px red, 2px 3px 3px violet;
+
+    - Another cool type of shadow you can apply is done with the box-shadow property
+    - This works best when used in accordance with div elements
+    - You provide 3 values in a similar manner to the text-shadow
+    - They will be a horizontal offset, vertical offset and blur here as well
+    - E.g: box-shadow: 1px 3px 4px
+
+- Margins in CSS
+    - Margins in CSS refere to the space around an element
+    - Naturally, there exist some margins around our body
+    - You can set the margins to 0 throughout our body like this:
+         body{
+            margin: 0px
+         }
+    - You can also use properties such as margin-left, margin-right, margin-top and margin-bottom
+    - These will set the respective margins to a value in pixels as we have done in the above example
+    - You can also just use the margin property and provide four values in px separated by space as follows: margin: 10px 15px 20px 5px; 
+    - The order in which these values take effect is top, right, bottom and left
+    - You can also set any of these properties to auto
+    - Using auto alongside margin is useful when trying to center elements
+    - It basically tells the browser to compute the margin automatically
+
+- The float property
+    - The float property is used to position an element to the left or right of its container, allowing text or inline elements to wrap around it.
+    - Originally, it was used to wrap text around images—just like in newspapers.
+    - Syntax:
+        element {
+            float: left | right | none | inherit;
+        }
+    - none is the default value that the float property is set to. This basically means that the element will not float.
+    - right floats the element to the right, content flows on the left
+    - left floats the element to the lefft, content flows on the right
+
+- The overflow property
+    - When an element's content is larger than the box dimensions (either in width, height, or both), overflow determines how the extra content is handled.
+    - Syntax:
+    element {
+        overflow: visible | hidden | scroll | auto;
+    }   
+    - It akes four possible values
+    - visible: Default. Content overflows the box and is still visible.
+    - hidden: Extra content is clipped and not visible. No scrollbars
+    - scroll: 	Scrollbars are always visible, even if not needed.
+    - auto: Scrollbars appear only if needed (i.e., if content overflows).
+
+-
 
